@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+    margin: auto;
+    padding: auto;
+    background-color: azure;
+    background-color: #161216;
+}
+
+body{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: whitesmoke;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    background-color: #391938;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    border-radius: 0px 10px;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    box-shadow: 10px 10px 20px #5B205A, 10px 10px 20px #62183A;
+}
+.navlink{
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    font-family: 'papyrus','Lucida Handwriting';
+    background-color: #391938;
+    font-weight: bolder;
+    transition: all 1s;
+    transition-timing-function: ease-out;
+}
+
+#navbar:target{
+    display: block;
+    position: relative;
+    top: -50px;
+    visibility: hidden;
+}
+
+.navlink:hover{
+    text-shadow: 0px 0px 30px whitesmoke, 0px 0px 30px pink;
+    text-decoration: solid;
+    font-weight: bolder;
+    font-size: 175%;
+}
+
+#introduction{
+    padding: 10px;
+    margin: 400px 200px;
+    text-align: center;
+    font-family: 'papyrus','Lucida Handwriting';
+    scroll-margin-top: 500px;
+}
+
+.projs{
+    background-color: #710F0A;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+    width: 100%;
+    scroll-margin-top: 100px;
+    transition: 400ms;
+}
+
+.projs #projectTile{ 
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    background-color: #8A1926;
+    margin: 15px;
+    height: 400px;
+    width: 300px;
+    transition: 0.5s;
+    transition-timing-function: ease-out;
+}
+
+#links, #GameImg{
+    height: 375px;
+    width: 275px;
+    object-fit: fill;
+    object-position: 20% 100%;
+    border-radius: 50px;
+}
+
+#projectTile:hover{
+    transform: scale(1.1, 1.1);
+}
+.projs:hover > #projectTile:not(:hover){
+    filter: blur(20px);
+}
+
+.contacts{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    flex-direction: column;
+    scroll-margin-top: 50px;
+    margin: 20px;
+}
+
+#contactInfo{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    font-family: 'papyrus','Lucida Handwriting';
+    transition: all 1s;
+    transition-timing-function: ease-out;
+}
+
+#contactInfo:hover{
+    font-size: 175%;
+    text-shadow: 0px 0px 30px whitesmoke, 10px 10px 15px #992d97;
+}
